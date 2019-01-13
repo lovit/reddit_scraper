@@ -4,6 +4,8 @@ It scraps the latest submission in the given subreddit (topic).
 
 ## Usage
 
+First, set your configuration in `config.json`
+
 ```python
 begin_date = '2019-01-12 05-12-00'
 r = 'MachineLearning'

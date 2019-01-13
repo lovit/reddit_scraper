@@ -41,3 +41,8 @@ result
 Stop scrapping. 19 / 100 posts was scrapped
 The oldest submission has been created after 2019-01-12 05-12-00
 ```
+
+
+## Requirements
+
+praw >= 6.0.0 (Reddit Python API)

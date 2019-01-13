@@ -29,5 +29,5 @@ def normalize_text(text):
 def unixtime_to_datetime(t):
     return datetime.fromtimestamp(t)
 
-def strf_to_datetime(yyyy_mm_dd, form='%Y-%m-%d'):
-    return datetime.strptime(yyyy_mm_dd, form)
+def strf_to_datetime(strf, form='%Y-%m-%d %H-%M-%S'):
+    return datetime.strptime(strf, form)

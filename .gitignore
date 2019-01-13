@@ -10,6 +10,7 @@ build/
 
 # Experiments
 tmp/
+config.json
 
 # Jupyter notebook
 .ipynb_checkpoints/

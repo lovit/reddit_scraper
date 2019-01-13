@@ -1,6 +1,7 @@
 import json
 import math
 import praw
+import time
 import requests
 from .utils import get_soup
 from .utils import strf_to_datetime
@@ -42,7 +43,7 @@ def parse_submission(submission):
         'author_fullname': submission.author_fullname,
         'selftext': submission.selftext,
         'selftext_html': submission.selftext_html,
-        'id': submissioni.id
+        'id': submission.id
     }
 
 def parse_idx(strf):

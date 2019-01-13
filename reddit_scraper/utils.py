@@ -6,7 +6,7 @@ from time import gmtime, strftime
 
 
 def now():
-    return strftime("%Y-%m-%d %H:%M:%S", gmtime())
+    return strftime("%Y-%m-%d_%H:%M:%S", gmtime())
 
 def get_soup(url, headers=None):
     if headers is None:
@@ -29,5 +29,5 @@ def normalize_text(text):
 def unixtime_to_datetime(t):
     return datetime.fromtimestamp(t)
 
-def strf_to_datetime(strf, form='%Y-%m-%d %H-%M-%S'):
+def strf_to_datetime(strf, form='%Y-%m-%d_%H-%M-%S'):
     return datetime.strptime(strf, form)

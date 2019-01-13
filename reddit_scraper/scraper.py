@@ -1,6 +1,8 @@
 import json
 import math
+import praw
 import requests
+from .utils import get_soup
 from .utils import strf_to_datetime
 from .utils import unixtime_to_datetime
 
@@ -11,7 +13,8 @@ def _parse_comment(comment):
         'created_utc': comment.created_utc,
         'score': comment.score,
         'body_html': comment.body_html,
-        'body': comment.body
+        'body': comment.body,
+        'id': comment.id
     }
 
 def parse_submission(submission):
@@ -38,7 +41,8 @@ def parse_submission(submission):
         'created_utc': submission.created_utc,
         'author_fullname': submission.author_fullname,
         'selftext': submission.selftext,
-        'selftext_html': submission.selftext_html
+        'selftext_html': submission.selftext_html,
+        'id': submissioni.id
     }
 
 def parse_idx(strf):
@@ -60,10 +64,12 @@ def get_after_submission_ids(r, after_id, dist):
     submission_ids = [parse_idx(idx) for idx in json.loads(r.text)['postIds']]
     return submission_ids
 
-def yield_submission_from(begin_date, r, dist, max_num=100, sleep=1):
+def yield_submission_from(reddit, begin_date, r, dist, max_num=100, sleep=1):
     """
     Arguments
     ---------
+    reddit : praw.Reddit
+        Reddit instance logged with id & OAuth
     begin_date : str
         Begin date str format. 2018-01-01
     r : str

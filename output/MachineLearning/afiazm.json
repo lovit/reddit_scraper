@@ -1,0 +1,26 @@
+{
+  "title": "[P] Conditional Deep Convolutional GAN (CDCGAN) Keras implementation",
+  "comments": [
+    {
+      "author_fullname": "t2_28306rg",
+      "created_utc": 1547397234.0,
+      "score": 2,
+      "body_html": "<div class=\"md\"><p>In case anyone else wants to read more about them and doesn&#39;t want to google:</p>\n\n<p><a href=\"https://www.foldl.me/uploads/2015/conditional-gans-face-generation/paper.pdf\">https://www.foldl.me/uploads/2015/conditional-gans-face-generation/paper.pdf</a></p>\n</div>",
+      "body": "In case anyone else wants to read more about them and doesn't want to google:\n\n[https://www.foldl.me/uploads/2015/conditional-gans-face-generation/paper.pdf](https://www.foldl.me/uploads/2015/conditional-gans-face-generation/paper.pdf)",
+      "id": "edze83x"
+    },
+    {
+      "author_fullname": "t2_kq14w",
+      "created_utc": 1547395109.0,
+      "score": 1,
+      "body_html": "<div class=\"md\"><p>I&#39;m a bot, <em>bleep</em>, <em>bloop</em>. Someone has linked to this thread from another place on reddit:</p>\n\n<ul>\n<li>[<a href=\"/r/computervision\">/r/computervision</a>] <a href=\"https://www.reddit.com/r/computervision/comments/afkjj3/p_conditional_deep_convolutional_gan_cdcgan_keras/\">[P] Conditional Deep Convolutional GAN (CDCGAN) Keras implementation</a></li>\n</ul>\n\n<p>&nbsp;<em><sup>If you follow any of the above links, please respect the rules of reddit and don&#39;t vote in the other threads.</sup> <sup>(<a href=\"/r/TotesMessenger\">Info</a></sup> <sup>/</sup> <sup><a href=\"/message/compose?to=/r/TotesMessenger\">Contact</a>)</sup></em></p>\n</div>",
+      "body": "I'm a bot, *bleep*, *bloop*. Someone has linked to this thread from another place on reddit:\n\n- [/r/computervision] [\\[P\\] Conditional Deep Convolutional GAN (CDCGAN) Keras implementation](https://www.reddit.com/r/computervision/comments/afkjj3/p_conditional_deep_convolutional_gan_cdcgan_keras/)\n\n&nbsp;*^(If you follow any of the above links, please respect the rules of reddit and don't vote in the other threads.) ^\\([Info](/r/TotesMessenger) ^/ ^[Contact](/message/compose?to=/r/TotesMessenger))*",
+      "id": "edzb2lh"
+    }
+  ],
+  "created_utc": 1547376462.0,
+  "author_fullname": "t2_jrsus",
+  "selftext": "Hi all I thought I will share a cdcgan keras implementation where the model input is noise and a label embedding.\n\nImplementation: [Github repo](https://github.com/gaborvecsei/CDCGAN-Keras)\n\nAbstract model architecture: [image](https://github.com/gaborvecsei/CDCGAN-Keras/blob/master/art/cdcgan_abstract_model.png)\n\nMNIST result images: [gif image](https://github.com/gaborvecsei/CDCGAN-Keras/blob/master/art/mnist_generated_per_epoch.gif)\n\nI would love to hear your thoughts",
+  "selftext_html": "<!-- SC_OFF --><div class=\"md\"><p>Hi all I thought I will share a cdcgan keras implementation where the model input is noise and a label embedding.</p>\n\n<p>Implementation: <a href=\"https://github.com/gaborvecsei/CDCGAN-Keras\">Github repo</a></p>\n\n<p>Abstract model architecture: <a href=\"https://github.com/gaborvecsei/CDCGAN-Keras/blob/master/art/cdcgan_abstract_model.png\">image</a></p>\n\n<p>MNIST result images: <a href=\"https://github.com/gaborvecsei/CDCGAN-Keras/blob/master/art/mnist_generated_per_epoch.gif\">gif image</a></p>\n\n<p>I would love to hear your thoughts</p>\n</div><!-- SC_ON -->",
+  "id": "afiazm"
+}

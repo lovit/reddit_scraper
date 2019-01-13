@@ -1,0 +1,26 @@
+{
+  "title": "[D] Semantic Similarity using Universal Sentence Encoder",
+  "comments": [
+    {
+      "author_fullname": "t2_ab3zq",
+      "created_utc": 1547286155.0,
+      "score": 3,
+      "body_html": "<div class=\"md\"><p>I see your paragraph on BERT not fitting into your memory and I think other might find this article interesting: <a href=\"https://medium.com/huggingface/training-larger-batches-practical-tips-on-1-gpu-multi-gpu-distributed-setups-ec88c3e51255\">Training Neural Nets on Larger Batches</a></p>\n\n<p>It covers (and provides code for) training and using BERT when you can&#39;t fit the whole network into the GPU memory. I know that it doesn&#39;t help if you cannot even fit it into RAM, but it is still an interesting read and a useful tool if one unavoidably has to work with very large models. BERT is too large to fit most GPUs.</p>\n\n<p>&#x200B;</p>\n\n<p>Note that the method is probably much easier to implement in PyTorch than in TF.</p>\n</div>",
+      "body": "I see your paragraph on BERT not fitting into your memory and I think other might find this article interesting: [Training Neural Nets on Larger Batches](https://medium.com/huggingface/training-larger-batches-practical-tips-on-1-gpu-multi-gpu-distributed-setups-ec88c3e51255)\n\nIt covers (and provides code for) training and using BERT when you can't fit the whole network into the GPU memory. I know that it doesn't help if you cannot even fit it into RAM, but it is still an interesting read and a useful tool if one unavoidably has to work with very large models. BERT is too large to fit most GPUs.\n\n&#x200B;\n\nNote that the method is probably much easier to implement in PyTorch than in TF.",
+      "id": "edvr5nb"
+    },
+    {
+      "author_fullname": "t2_12tdyz",
+      "created_utc": 1547307562.0,
+      "score": 1,
+      "body_html": "<div class=\"md\"><p>How do you train the USE embeddings? Is it basically Skip-Thought?</p>\n</div>",
+      "body": "How do you train the USE embeddings? Is it basically Skip-Thought?",
+      "id": "edwbnq2"
+    }
+  ],
+  "created_utc": 1547263420.0,
+  "author_fullname": "t2_m151b",
+  "selftext": "I have written a short tutorial regarding using Universal Sentence Encoder to do semantic search. \nThe use-case is as:\n- we have a bunch of text (words/sentence/paragraph)\n- we have a query\n- find the text that is semantically similar to the query\n\nThe link to original notebook is also embedded in the blog.\n\n[Here's](http://www.nishanpantha.com.np/programming/2019/01/09/universal-sentence-encoder-semantic-search.html) the blog post.\n\nThe jupyter notebook can be found [here](https://github.com/NISH1001/machine-learning-into-the-void/blob/master/nlp/universal-sentence-encocder-semantic-similarity.ipynb).\n\nCurrently, I have been using Universal Sentence Encoder for a chatbot I am working on. Previously, I used averages of GloVe embeddings for each words. However, UST seems to perform better at sentence level.",
+  "selftext_html": "<!-- SC_OFF --><div class=\"md\"><p>I have written a short tutorial regarding using Universal Sentence Encoder to do semantic search. \nThe use-case is as:\n- we have a bunch of text (words/sentence/paragraph)\n- we have a query\n- find the text that is semantically similar to the query</p>\n\n<p>The link to original notebook is also embedded in the blog.</p>\n\n<p><a href=\"http://www.nishanpantha.com.np/programming/2019/01/09/universal-sentence-encoder-semantic-search.html\">Here&#39;s</a> the blog post.</p>\n\n<p>The jupyter notebook can be found <a href=\"https://github.com/NISH1001/machine-learning-into-the-void/blob/master/nlp/universal-sentence-encocder-semantic-similarity.ipynb\">here</a>.</p>\n\n<p>Currently, I have been using Universal Sentence Encoder for a chatbot I am working on. Previously, I used averages of GloVe embeddings for each words. However, UST seems to perform better at sentence level.</p>\n</div><!-- SC_ON -->",
+  "id": "af3fp7"
+}

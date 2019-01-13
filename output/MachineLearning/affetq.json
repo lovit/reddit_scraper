@@ -1,0 +1,34 @@
+{
+  "title": "[D] How can I retrieve a mathematical/symbolic representation of the gradient derived by the autograd/autodiff modules in popular tensor frameworks?",
+  "comments": [
+    {
+      "author_fullname": "t2_1mu1q6xt",
+      "created_utc": 1547390956.0,
+      "score": 4,
+      "body_html": "<div class=\"md\"><p><a href=\"https://github.com/google/tangent\">https://github.com/google/tangent</a></p>\n\n<p>&quot;Existing libraries implement automatic differentiation by tracing a program&#39;s execution (at runtime, like PyTorch) or by staging out a dynamic data-flow graph and then differentiating the graph (ahead-of-time, like TensorFlow). In contrast, Tangent performs ahead-of-time autodiff on the Python source code itself, and produces Python source code as its output. &quot;</p>\n</div>",
+      "body": "https://github.com/google/tangent\n\n\"Existing libraries implement automatic differentiation by tracing a program's execution (at runtime, like PyTorch) or by staging out a dynamic data-flow graph and then differentiating the graph (ahead-of-time, like TensorFlow). In contrast, Tangent performs ahead-of-time autodiff on the Python source code itself, and produces Python source code as its output. \"",
+      "id": "edz5le7"
+    },
+    {
+      "author_fullname": "t2_2ro1p0a9",
+      "created_utc": 1547373297.0,
+      "score": 3,
+      "body_html": "<div class=\"md\"><p>Specifically using autograd/autodiff in Tensorflow, it doesn&#39;t use symbolic differentiation. Rather it uses auto differentiation, meaning you won&#39;t be able to find the derivatives symbolically. </p>\n\n<p>Ex:</p>\n\n<p>Finding the derivative of cos(2pi) symbolically will give you: -sin(2pi) = 0</p>\n\n<p>Finding the derivative of cos(2pi) via autodifferentiatpion will give you: 0.</p>\n\n<p>So the answer is no.</p>\n</div>",
+      "body": "Specifically using autograd/autodiff in Tensorflow, it doesn't use symbolic differentiation. Rather it uses auto differentiation, meaning you won't be able to find the derivatives symbolically. \n\nEx:\n\nFinding the derivative of cos(2pi) symbolically will give you: -sin(2pi) = 0\n\nFinding the derivative of cos(2pi) via autodifferentiatpion will give you: 0.\n\nSo the answer is no.",
+      "id": "edyqf9k"
+    },
+    {
+      "author_fullname": "t2_dd9fn",
+      "created_utc": 1547376161.0,
+      "score": 1,
+      "body_html": "<div class=\"md\"><p>If the graph is small, you could obviously just rewrite the whole thing in a symbolic language.\nTensorflow instantiates a full graph when you call gradient, so in theory you could do introspection on it, but would likely not be super helpful.\nCheck out the Tangent package, it&#39;s still experimental, but does source transformation, i.e. it can transform a python program into its corresponding gradient program. </p>\n</div>",
+      "body": "If the graph is small, you could obviously just rewrite the whole thing in a symbolic language.\nTensorflow instantiates a full graph when you call gradient, so in theory you could do introspection on it, but would likely not be super helpful.\nCheck out the Tangent package, it's still experimental, but does source transformation, i.e. it can transform a python program into its corresponding gradient program. ",
+      "id": "edystqg"
+    }
+  ],
+  "created_utc": 1547351020.0,
+  "author_fullname": "t2_75sguhf",
+  "selftext": "I would like to see what the gradient on the loss looks like for a given computational graph. Ideally Einstein notation since we're often working with 3D+ tensors. Does a utility like this exist?\n\nI understand that a large computational graph (eg modern neural network implementations) will have a massive equation to represent the gradient -- the graphs I work on are comparatively very small.",
+  "selftext_html": "<!-- SC_OFF --><div class=\"md\"><p>I would like to see what the gradient on the loss looks like for a given computational graph. Ideally Einstein notation since we&#39;re often working with 3D+ tensors. Does a utility like this exist?</p>\n\n<p>I understand that a large computational graph (eg modern neural network implementations) will have a massive equation to represent the gradient -- the graphs I work on are comparatively very small.</p>\n</div><!-- SC_ON -->",
+  "id": "affetq"
+}

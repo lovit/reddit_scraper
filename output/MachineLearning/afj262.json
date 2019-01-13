@@ -1,0 +1,26 @@
+{
+  "title": "[D] What are some the labs that focus on DL/Telecom Industry",
+  "comments": [
+    {
+      "author_fullname": "t2_xt7ig",
+      "created_utc": 1547387370.0,
+      "score": 6,
+      "body_html": "<div class=\"md\"><p>I know of two groups working on deep learning for communication systems that are looking for students:</p>\n\n<p>-Prof. Warren Gross at McGill University (I graduated from this group, <a href=\"https://scholar.google.ca/citations?user=xTvZgeoAAAAJ\">here</a> are my publications to give you an idea of the kind of stuff they&#39;re working on): <a href=\"http://www.isip.ece.mcgill.ca/media/phd_offer.pdf\">http://www.isip.ece.mcgill.ca/media/phd_offer.pdf</a></p>\n\n<p>-Prof. Alexios Balatsoukas-Stimming at EPFL: <a href=\"http://alexiosbalatsoukas.com/MLCOM-PhD.pdf\">http://alexiosbalatsoukas.com/MLCOM-PhD.pdf</a></p>\n\n<p>Let me know if you have any questions.</p>\n</div>",
+      "body": "I know of two groups working on deep learning for communication systems that are looking for students:\n\n\\-Prof. Warren Gross at McGill University (I graduated from this group, [here](https://scholar.google.ca/citations?user=xTvZgeoAAAAJ) are my publications to give you an idea of the kind of stuff they're working on): [http://www.isip.ece.mcgill.ca/media/phd\\_offer.pdf](http://www.isip.ece.mcgill.ca/media/phd_offer.pdf)\n\n\\-Prof. Alexios Balatsoukas-Stimming at EPFL: [http://alexiosbalatsoukas.com/MLCOM-PhD.pdf](http://alexiosbalatsoukas.com/MLCOM-PhD.pdf)\n\nLet me know if you have any questions.",
+      "id": "edz25vv"
+    },
+    {
+      "author_fullname": "t2_127vdbd9",
+      "created_utc": 1547388291.0,
+      "score": 2,
+      "body_html": "<div class=\"md\"><p>Interesting question. I didn’t see a lot of surveys trying to map the field of telecommunications and DL, but you might be able to find surveys around smaller problem. You might need to do some work mapping the field first. </p>\n\n<p>I came across this paper sometime ago. This might be useful. “Deep Learning in Mobile and Wireless” <a href=\"https://arxiv.org/pdf/1803.04311.pdf\">https://arxiv.org/pdf/1803.04311.pdf</a></p>\n</div>",
+      "body": "Interesting question. I didn’t see a lot of surveys trying to map the field of telecommunications and DL, but you might be able to find surveys around smaller problem. You might need to do some work mapping the field first. \n\nI came across this paper sometime ago. This might be useful. “Deep Learning in Mobile and Wireless” https://arxiv.org/pdf/1803.04311.pdf",
+      "id": "edz2zjk"
+    }
+  ],
+  "created_utc": 1547383823.0,
+  "author_fullname": "t2_kc2bd",
+  "selftext": "Hi,\n\nI am trying to explore research efforts in the area of Telecom industry (Network Management, Network Design and Optimization, Network Managed Services, IoT connectivity, Orchestration, 4G, 5G, Automated Network Operations, Cellular IoT, ) and I would like to know if you can list some conferences or research labs (academic or industrial) that focus on the use of deep learning/GANs to optimize their solutions. Most of the work I have seen uses (traditional) ML techniques and statistical methods to tackle the above-mentioned problems.\n\nIn case you comes across a good survey, please share it. It would be much appreciated. I feel that this community scattered. I worked in NLP before (internships), and it was very easy to see how the community is focused.\n\nThanks in advance.",
+  "selftext_html": "<!-- SC_OFF --><div class=\"md\"><p>Hi,</p>\n\n<p>I am trying to explore research efforts in the area of Telecom industry (Network Management, Network Design and Optimization, Network Managed Services, IoT connectivity, Orchestration, 4G, 5G, Automated Network Operations, Cellular IoT, ) and I would like to know if you can list some conferences or research labs (academic or industrial) that focus on the use of deep learning/GANs to optimize their solutions. Most of the work I have seen uses (traditional) ML techniques and statistical methods to tackle the above-mentioned problems.</p>\n\n<p>In case you comes across a good survey, please share it. It would be much appreciated. I feel that this community scattered. I worked in NLP before (internships), and it was very easy to see how the community is focused.</p>\n\n<p>Thanks in advance.</p>\n</div><!-- SC_ON -->",
+  "id": "afj262"
+}

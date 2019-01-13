@@ -1,0 +1,146 @@
+{
+  "title": "[D] Machine Learning people, What are some things that you struggled learning when you were first starting out?",
+  "comments": [
+    {
+      "author_fullname": "t2_d7ung",
+      "created_utc": 1547401530.0,
+      "score": 58,
+      "body_html": "<div class=\"md\"><p>Prior and posterior distributions in Bayesian statistics</p>\n</div>",
+      "body": "Prior and posterior distributions in Bayesian statistics",
+      "id": "edzku3y"
+    },
+    {
+      "author_fullname": "t2_hm3k9",
+      "created_utc": 1547402857.0,
+      "score": 29,
+      "body_html": "<div class=\"md\"><p>I&#39;m writing from an absolute beginner&#39;s perspective. I had no formal training in calculus, data science, computer engineering etc. </p>\n\n<p>Tougher than i imagined:</p>\n\n<ul>\n<li>Statistics</li>\n<li>Calculus</li>\n<li>Managing environments</li>\n<li>PyCharm </li>\n<li>Installing CUDA, CUDNN in Ubuntu (God knows the amount of hours i wasted trying installing proper versions for Tensorflow)</li>\n</ul>\n\n<p>Easier than i imagined: </p>\n\n<ul>\n<li>Python</li>\n<li>Selenium, Beautifulsoup, Numpy, Pandas</li>\n<li>Using Github, Gitkraken</li>\n<li>Google Collab, Big Query</li>\n<li>SQL</li>\n</ul>\n\n<p>Not all of these things are directly related to ML but you&#39;ll at somepoint cross roads with them. I&#39;m a low iq retard so take my word with a grain of salt. I also should tell that most of the time i feel like i don&#39;t know what the fuck i am doing. </p>\n</div>",
+      "body": "I'm writing from an absolute beginner's perspective. I had no formal training in calculus, data science, computer engineering etc. \n\nTougher than i imagined:\n\n* Statistics\n* Calculus\n* Managing environments\n* PyCharm \n* Installing CUDA, CUDNN in Ubuntu (God knows the amount of hours i wasted trying installing proper versions for Tensorflow)\n\n\nEasier than i imagined: \n\n* Python\n* Selenium, Beautifulsoup, Numpy, Pandas\n* Using Github, Gitkraken\n* Google Collab, Big Query\n* SQL\n\nNot all of these things are directly related to ML but you'll at somepoint cross roads with them. I'm a low iq retard so take my word with a grain of salt. I also should tell that most of the time i feel like i don't know what the fuck i am doing. ",
+      "id": "edzmxxz"
+    },
+    {
+      "author_fullname": "t2_4llk6",
+      "created_utc": 1547409945.0,
+      "score": 13,
+      "body_html": "<div class=\"md\"><p>Doing what I needed to do, instead of just doing what was easy. It&#39;s easy to think &quot;hey this udemy/coursera/udacity/edx/youtube course looks good and will help me, I should do it&quot;, when in reality it&#39;s almost always a huge time sink with very little benefit. There are exceptions (CS231n), but I&#39;d say most of the time I spent watching videos was time wasted.</p>\n\n<p>It took me a loooong time to realize that what I needed to do is just pick up Bishop and Murphy (yes and, and no ISL/ESL), and just dig in. If you&#39;re starting out, pick Bishop first. It will take quite some time to chew through it.</p>\n\n<p>Learning ML properly (with a principled approach, not just memorizing algorithms) takes a fuckton of time. Murphy is a heavy book. I&#39;ve been reading it for almost a year and I&#39;m still not happy. It&#39;s also the continual struggle of going back to the things you think you already understood and digging deeper. Initially thought &quot;hey I did decent in my probability class, I can skip this&quot;, and since then I&#39;ve bought about 5 different probability theory textbooks, another 4-5 on statistics (incl. bayesian), and a bunch of other crap. It&#39;s ridiculous how much I&#39;ve underestimated how much I need to learn in order to understand the interesting things.</p>\n\n<p>If I were to give a short advice, it&#39;s like when people ask &quot;how do I learn real analysis?&quot; and the answer is &quot;Rudin&quot;. We can all argue if book X is better, but the overwhelming majority (if not everyone) can probably agree, that if you pick up Rudin and keep grinding until you get through, you&#39;ll come out with magic powers.</p>\n\n<p>I&#39;d say the same for Murphy(/Bishop). No matter how many courses you do, or how many nice high level thingies or applied books or whatever, everyone in the ML world will also probably agree, that if you can grok Murphy, you&#39;re doing good.</p>\n\n<p>I wish someone told me this ~4 years ago when I was watching Andrew Ng&#39;s coursera course and thinking &quot;lol it&#39;s just matrix multiplication with gradients, I can do that, ez&quot;.</p>\n</div>",
+      "body": "Doing what I needed to do, instead of just doing what was easy. It's easy to think \"hey this udemy/coursera/udacity/edx/youtube course looks good and will help me, I should do it\", when in reality it's almost always a huge time sink with very little benefit. There are exceptions (CS231n), but I'd say most of the time I spent watching videos was time wasted.\n\nIt took me a loooong time to realize that what I needed to do is just pick up Bishop and Murphy (yes and, and no ISL/ESL), and just dig in. If you're starting out, pick Bishop first. It will take quite some time to chew through it.\n\nLearning ML properly (with a principled approach, not just memorizing algorithms) takes a fuckton of time. Murphy is a heavy book. I've been reading it for almost a year and I'm still not happy. It's also the continual struggle of going back to the things you think you already understood and digging deeper. Initially thought \"hey I did decent in my probability class, I can skip this\", and since then I've bought about 5 different probability theory textbooks, another 4-5 on statistics (incl. bayesian), and a bunch of other crap. It's ridiculous how much I've underestimated how much I need to learn in order to understand the interesting things.\n\nIf I were to give a short advice, it's like when people ask \"how do I learn real analysis?\" and the answer is \"Rudin\". We can all argue if book X is better, but the overwhelming majority (if not everyone) can probably agree, that if you pick up Rudin and keep grinding until you get through, you'll come out with magic powers.\n\nI'd say the same for Murphy(/Bishop). No matter how many courses you do, or how many nice high level thingies or applied books or whatever, everyone in the ML world will also probably agree, that if you can grok Murphy, you're doing good.\n\nI wish someone told me this ~4 years ago when I was watching Andrew Ng's coursera course and thinking \"lol it's just matrix multiplication with gradients, I can do that, ez\".",
+      "id": "edzyj4o"
+    },
+    {
+      "author_fullname": "t2_wwmiqi7",
+      "created_utc": 1547402216.0,
+      "score": 47,
+      "body_html": "<div class=\"md\"><p>In my opinion, at some point, you have to start building your own neural network without any help of external library. For example building a simple classifier using only Python and numpy is a very good exercise </p>\n\n<ul>\n<li>you will understand the backpropagation algorithm in details</li>\n<li>you will understand the limits of gradient descent and the solutions to overcome it.</li>\n<li>you will compute derivative &quot;by hand&quot; to verify you computations </li>\n<li>a lot of hidden mechanisms of tensorflow, pytorch etc.. will be revealed (Xavier initialization)</li>\n<li>you will have a lot of fun trying to implement new features (activation functions, loss functions, momentum..)</li>\n</ul>\n\n<p>Another variant is to write a neural network in C++ (more difficult imo).</p>\n\n<p>The most important pre-requisite is understanding the chain rule of derivation. And some linear algebra of course...</p>\n\n<p>The basic idea behind backpropagation became only clear when I tried to do it myself. It would be 1000x more useful than any online course.</p>\n\n<p>Bonus point, the felling you get when you neural net is trained and able to generalize is almost better than sex :)</p>\n</div>",
+      "body": "In my opinion, at some point, you have to start building your own neural network without any help of external library. For example building a simple classifier using only Python and numpy is a very good exercise \n\n- you will understand the backpropagation algorithm in details\n- you will understand the limits of gradient descent and the solutions to overcome it.\n- you will compute derivative \"by hand\" to verify you computations \n- a lot of hidden mechanisms of tensorflow, pytorch etc.. will be revealed (Xavier initialization)\n- you will have a lot of fun trying to implement new features (activation functions, loss functions, momentum..)\n\nAnother variant is to write a neural network in C++ (more difficult imo).\n\nThe most important pre-requisite is understanding the chain rule of derivation. And some linear algebra of course...\n\nThe basic idea behind backpropagation became only clear when I tried to do it myself. It would be 1000x more useful than any online course.\n\nBonus point, the felling you get when you neural net is trained and able to generalize is almost better than sex :)",
+      "id": "edzlwws"
+    },
+    {
+      "author_fullname": "t2_uey7n",
+      "created_utc": 1547411865.0,
+      "score": 5,
+      "body_html": "<div class=\"md\"><p>Data formatting for neural nets.</p>\n\n<p>It&#39;s surprising how often one can forget to scale properly, forget to format as 3D tensors for RNNs, etc. Preprocessing for specific tasks is no joke, yet I feel like this specific area gets less attention in the training literature.</p>\n\n<p>Recommendation: try the same problem with the same architecture, but with different preprocessing/formatting schemes. Data representation has a massive influence on the problem. I&#39;ve seen many cases where simply changing the representation yields a significant increase in performance, with no other changes to the dataset or architecture/model.</p>\n</div>",
+      "body": "Data formatting for neural nets.\n\nIt's surprising how often one can forget to scale properly, forget to format as 3D tensors for RNNs, etc. Preprocessing for specific tasks is no joke, yet I feel like this specific area gets less attention in the training literature.\n\nRecommendation: try the same problem with the same architecture, but with different preprocessing/formatting schemes. Data representation has a massive influence on the problem. I've seen many cases where simply changing the representation yields a significant increase in performance, with no other changes to the dataset or architecture/model.",
+      "id": "ee01xk9"
+    },
+    {
+      "author_fullname": "t2_1h230ytw",
+      "created_utc": 1547401807.0,
+      "score": 9,
+      "body_html": "<div class=\"md\"><p>ML framework APIs, especially Tensorflow, needed to use Keras.</p>\n</div>",
+      "body": "ML framework APIs, especially Tensorflow, needed to use Keras.",
+      "id": "edzl9ph"
+    },
+    {
+      "author_fullname": "t2_8kwqrcb",
+      "created_utc": 1547407921.0,
+      "score": 2,
+      "body_html": "<div class=\"md\"><p>For me, in industry, how fast I needed to work and deliver results compared to academia. I had to be told, I didn&#39;t figure this out on my own. </p>\n</div>",
+      "body": "For me, in industry, how fast I needed to work and deliver results compared to academia. I had to be told, I didn't figure this out on my own. ",
+      "id": "edzv7f6"
+    },
+    {
+      "author_fullname": "t2_qb6wx",
+      "created_utc": 1547418617.0,
+      "score": 2,
+      "body_html": "<div class=\"md\"><p>Hardest part was learning how the input shapes of different types (DNN, RNN, CNN) work. I think i spend ~20 hours on figuring out the RNN input shape... (while working with multivariate tabular time series data). Including with how to transform a table in the required shape.</p>\n\n<p>After that came the making sense of hooking up different layers to each other, having to flatten certain outputs, weights initialization, batch normalization, dropout, transfer learning, hyper parameters etc. \nBut damn the input shapes took long.... Once those were understood, everything started going quite fast.</p>\n\n<p>What made the input shape the hardest part  (i think). Is that often the explanation is overlooked and certainly information on how to use it with (your own) uncommon dataset is lacking. I&#39;d say preprocessing the data and getting it into the required format is the hardest part, while the network architecture is basically just like building a house with Lego... Ofcourse there is reasoning behind architectures (up to a certain point), but i found it relatively easy to learn about that in comparison so the input shapes of networks and layers.</p>\n</div>",
+      "body": "Hardest part was learning how the input shapes of different types (DNN, RNN, CNN) work. I think i spend ~20 hours on figuring out the RNN input shape... (while working with multivariate tabular time series data). Including with how to transform a table in the required shape.\n\nAfter that came the making sense of hooking up different layers to each other, having to flatten certain outputs, weights initialization, batch normalization, dropout, transfer learning, hyper parameters etc. \nBut damn the input shapes took long.... Once those were understood, everything started going quite fast.\n\nWhat made the input shape the hardest part  (i think). Is that often the explanation is overlooked and certainly information on how to use it with (your own) uncommon dataset is lacking. I'd say preprocessing the data and getting it into the required format is the hardest part, while the network architecture is basically just like building a house with Lego... Ofcourse there is reasoning behind architectures (up to a certain point), but i found it relatively easy to learn about that in comparison so the input shapes of networks and layers.",
+      "id": "ee0bu7i"
+    },
+    {
+      "author_fullname": "t2_1e67ium8",
+      "created_utc": 1547419389.0,
+      "score": 2,
+      "body_html": "<div class=\"md\"><p>What was and is still challenging each time, is to setup up the development environment on a system. Installing CUDA, Tensorflow, PyCharm... - those are always days of horror and despair. </p>\n</div>",
+      "body": "What was and is still challenging each time, is to setup up the development environment on a system. Installing CUDA, Tensorflow, PyCharm... - those are always days of horror and despair. ",
+      "id": "ee0cuyu"
+    },
+    {
+      "author_fullname": "t2_14zbru",
+      "created_utc": 1547420826.0,
+      "score": 2,
+      "body_html": "<div class=\"md\"><p>Transitioning from a basic understanding to a more cutting edge research understanding was way more confusing and time-consuming than I expected. I had a good computer science background so stats, calc, and linalg were no problem. What was a problem was trying to piece together all the jargon that arxiv papers referred to and going through citations to make sure I actually understood the idea. I had to leverage some weird skills I didn&#39;t think I&#39;d use again from my research projects in social sciences to navigate ML research hell.</p>\n\n<p>All educational materials seem to be &quot;learn to set up a single layer net in 10 minutes!&quot; or &quot;read the original paper, skrub&quot; with little inbetween. Barto and Sutton saved my ass a lot for reinforcement learning, but it feels a lot like trial and error without understanding until the lightbulb goes off three weeks later.</p>\n</div>",
+      "body": "Transitioning from a basic understanding to a more cutting edge research understanding was way more confusing and time-consuming than I expected. I had a good computer science background so stats, calc, and linalg were no problem. What was a problem was trying to piece together all the jargon that arxiv papers referred to and going through citations to make sure I actually understood the idea. I had to leverage some weird skills I didn't think I'd use again from my research projects in social sciences to navigate ML research hell.\n\nAll educational materials seem to be \"learn to set up a single layer net in 10 minutes!\" or \"read the original paper, skrub\" with little inbetween. Barto and Sutton saved my ass a lot for reinforcement learning, but it feels a lot like trial and error without understanding until the lightbulb goes off three weeks later.",
+      "id": "ee0epyd"
+    },
+    {
+      "author_fullname": "t2_jnd0j",
+      "created_utc": 1547402627.0,
+      "score": 2,
+      "body_html": "<div class=\"md\"><p>Environment is the hardest concept for me right now. All the stats and programming are not difficult for me, but being a traditional windows dev (C# .net), it’s difficult for me to get an environment up and running on my work windows platform.</p>\n\n<p>I have been successful working around things, but I would prefer some kind of VM option that was simple to set up and cost effective with verbose instructions and also something that’s kept up to date.</p>\n</div>",
+      "body": "Environment is the hardest concept for me right now. All the stats and programming are not difficult for me, but being a traditional windows dev (C# .net), it’s difficult for me to get an environment up and running on my work windows platform.\n\nI have been successful working around things, but I would prefer some kind of VM option that was simple to set up and cost effective with verbose instructions and also something that’s kept up to date.",
+      "id": "edzmkvy"
+    },
+    {
+      "author_fullname": "t2_167fgi",
+      "created_utc": 1547404634.0,
+      "score": 2,
+      "body_html": "<div class=\"md\"><p>Do you want to get started producing, or learning? After a year of wallowing in the Deep Learning Book and wondering if I was worthy, I found I could have hacked together the 60%-better-than-mine solution I found immediately without trying to digest it all first, more like a home improvement project than the impossibly arcane thing that it can be. And you can keep learning generally while advancing your own app. Fastai is close to this approach (and free).</p>\n</div>",
+      "body": "Do you want to get started producing, or learning? After a year of wallowing in the Deep Learning Book and wondering if I was worthy, I found I could have hacked together the 60%-better-than-mine solution I found immediately without trying to digest it all first, more like a home improvement project than the impossibly arcane thing that it can be. And you can keep learning generally while advancing your own app. Fastai is close to this approach (and free).",
+      "id": "edzpv9p"
+    },
+    {
+      "author_fullname": "t2_175xnq6e",
+      "created_utc": 1547405254.0,
+      "score": 1,
+      "body_html": "<div class=\"md\"><p>Trying to make sense of how it all fits together. I understood individual parts like whatever programming language you want to use, I understood the math, etc., but putting everything together to make something useful was challenging. Add to it all kinds of new-ish apps like TensorFlow, Jupyter, blah blah blah, and it took some weeks/months to finally have a working system. It’s kind of like trying to learn how to play an instrument by watching YouTube. Hard to peel back everything and organize it into something meaningful.</p>\n</div>",
+      "body": "Trying to make sense of how it all fits together. I understood individual parts like whatever programming language you want to use, I understood the math, etc., but putting everything together to make something useful was challenging. Add to it all kinds of new-ish apps like TensorFlow, Jupyter, blah blah blah, and it took some weeks/months to finally have a working system. It’s kind of like trying to learn how to play an instrument by watching YouTube. Hard to peel back everything and organize it into something meaningful.",
+      "id": "edzqsix"
+    },
+    {
+      "author_fullname": "t2_10w86z",
+      "created_utc": 1547415388.0,
+      "score": 1,
+      "body_html": "<div class=\"md\"><p>If you haven&#39;t programmed at all and youre starting out caring about the machine learning and not about the programming it wont be easy. Copying and pasting magic code from stackoverflow that does everything from the command line is an important skill if you want to focus on the math. </p>\n\n<p>I struggled a lot with learning the programming because i just didnt care about it. I figured there&#39;d be natural language programming within a few years when i started and i also thought i wouldn&#39;t need to code much. Coding is awesome though, i suggest focusing on programming and machine learning together and not avoiding learning html to code yourself a website. The machine learning skills will change every year, maybe every month. But coders will always be relevant, so if you wanna be a major player in machine learning long term you should be an elite coder. </p>\n</div>",
+      "body": "If you haven't programmed at all and youre starting out caring about the machine learning and not about the programming it wont be easy. Copying and pasting magic code from stackoverflow that does everything from the command line is an important skill if you want to focus on the math. \n\nI struggled a lot with learning the programming because i just didnt care about it. I figured there'd be natural language programming within a few years when i started and i also thought i wouldn't need to code much. Coding is awesome though, i suggest focusing on programming and machine learning together and not avoiding learning html to code yourself a website. The machine learning skills will change every year, maybe every month. But coders will always be relevant, so if you wanna be a major player in machine learning long term you should be an elite coder. \n",
+      "id": "ee07ct9"
+    },
+    {
+      "author_fullname": "t2_ihzgmdt",
+      "created_utc": 1547416534.0,
+      "score": 1,
+      "body_html": "<div class=\"md\"><p>Here’s one specifically using numpy </p>\n\n<p><a href=\"https://towardsdatascience.com/lets-code-a-neural-network-in-plain-numpy-ae7e74410795\">https://towardsdatascience.com/lets-code-a-neural-network-in-plain-numpy-ae7e74410795</a></p>\n</div>",
+      "body": "Here’s one specifically using numpy \n\nhttps://towardsdatascience.com/lets-code-a-neural-network-in-plain-numpy-ae7e74410795",
+      "id": "ee08zme"
+    },
+    {
+      "author_fullname": "t2_7z4ts",
+      "created_utc": 1547419146.0,
+      "score": 1,
+      "body_html": "<div class=\"md\"><p>Variational inference. I remember spending days trying to understand what <a href=\"https://arxiv.org/abs/1312.6114\">this paper</a> was doing.</p>\n</div>",
+      "body": "Variational inference. I remember spending days trying to understand what [this paper](https://arxiv.org/abs/1312.6114) was doing.",
+      "id": "ee0cjt6"
+    },
+    {
+      "author_fullname": "t2_8dlqc",
+      "created_utc": 1547419778.0,
+      "score": 1,
+      "body_html": "<div class=\"md\"><p>When I was starting out, it took me an entire summer to write a convolutional neural network on a GPU.  In my defense, that was using fragment shaders.</p>\n</div>",
+      "body": "When I was starting out, it took me an entire summer to write a convolutional neural network on a GPU.  In my defense, that was using fragment shaders.",
+      "id": "ee0ddps"
+    }
+  ],
+  "created_utc": 1547398387.0,
+  "author_fullname": "t2_cu77k",
+  "selftext": "There are 2-3 dozen \"Learn AI/Deep Learning/Whatever\" Tutorial videos/blogs/etc out there right now. Most of them are Bad, and almost all of them are aimed at people who already understand the basics of Stats, Calc, etc, and are already fluent in Linux, and Linux Jargon. In the past few months, I've graduated from ML Novice, to ML Amateur, and am starting to have actual fun with it. \n\nI spent most of that time just figuring out how someone even gets started. Things like \"Spinning Up with OpenAI\" and \"The Deep Learning Book\" have been helpful with the theory, but as far as actually getting a dev environment up and running, SpinningUp is still incomplete, and hasn't been updated in 2 months, and the DLB doesn't really talk about that. Eventually I figured it out, but I kept notes on the stuff I was struggling with, with the intent of maybe writing a short something to encourage a few of my friends to get into ML.\n\nSo what did you have trouble with when *you* were getting started, and how did you figure it out? If you were going to write a guide of some sort for people with only basic CS skills, what would you make sure to include, that other people might not, etc?",
+  "selftext_html": "<!-- SC_OFF --><div class=\"md\"><p>There are 2-3 dozen &quot;Learn AI/Deep Learning/Whatever&quot; Tutorial videos/blogs/etc out there right now. Most of them are Bad, and almost all of them are aimed at people who already understand the basics of Stats, Calc, etc, and are already fluent in Linux, and Linux Jargon. In the past few months, I&#39;ve graduated from ML Novice, to ML Amateur, and am starting to have actual fun with it. </p>\n\n<p>I spent most of that time just figuring out how someone even gets started. Things like &quot;Spinning Up with OpenAI&quot; and &quot;The Deep Learning Book&quot; have been helpful with the theory, but as far as actually getting a dev environment up and running, SpinningUp is still incomplete, and hasn&#39;t been updated in 2 months, and the DLB doesn&#39;t really talk about that. Eventually I figured it out, but I kept notes on the stuff I was struggling with, with the intent of maybe writing a short something to encourage a few of my friends to get into ML.</p>\n\n<p>So what did you have trouble with when <em>you</em> were getting started, and how did you figure it out? If you were going to write a guide of some sort for people with only basic CS skills, what would you make sure to include, that other people might not, etc?</p>\n</div><!-- SC_ON -->",
+  "id": "afl3t1"
+}

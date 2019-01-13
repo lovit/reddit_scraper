@@ -1,0 +1,66 @@
+{
+  "title": "[D] Are external GPUs a worthwhile investment?",
+  "comments": [
+    {
+      "author_fullname": "t2_4bnqya",
+      "created_utc": 1547322216.0,
+      "score": 7,
+      "body_html": "<div class=\"md\"><p>I&#39;ve been going through this.  It&#39;s good to have a desktop with a GPU.  You can even make the case for having a desktop with 2x.  </p>\n\n<p>But I imagine an external one is going to be nothing but headache.  Amazon spot instances are $0.3 / hour, that&#39;s 1000 hours for $300 bucks + you build up cloud provisioning scripts.  </p>\n\n<p>OTOH Google Colab is 12 hours at a time, for free.</p>\n</div>",
+      "body": "I've been going through this.  It's good to have a desktop with a GPU.  You can even make the case for having a desktop with 2x.  \n\nBut I imagine an external one is going to be nothing but headache.  Amazon spot instances are $0.3 / hour, that's 1000 hours for $300 bucks + you build up cloud provisioning scripts.  \n\nOTOH Google Colab is 12 hours at a time, for free.",
+      "id": "edwzga9"
+    },
+    {
+      "author_fullname": "t2_4c1u3",
+      "created_utc": 1547326073.0,
+      "score": 6,
+      "body_html": "<div class=\"md\"><p>This is something I have been researching for a while.  The answer is &quot;it depends&quot;.  </p>\n\n<p>To fully leverage an eGPU you really need a Thunderbolt 3 controller that sits on the main logic board -- NOT a daughterboard -- and it needs to provide 4x PCIE lanes.  This will give you the potential to use the GPU without being totally IO limited.  I say &quot;potential&quot; because it really depends on what kind of model you are training and what kind of data you are feeding into it.  </p>\n\n<p>You will still need to take a lot more care in queuing up your next batch of data on the GPU memory <em>before</em> it is required to avoid high latency costs between the CPU and GPU.  </p>\n\n<p>That being said, no, your 2014 Macbook Air does not have a Thunderbolt 3 connection with 4 PCIE lanes.  Honestly, you could be better off just setting up a good desktop and then remoting into it using something like Guacamole of just SSH.</p>\n</div>",
+      "body": "This is something I have been researching for a while.  The answer is \"it depends\".  \n\nTo fully leverage an eGPU you really need a Thunderbolt 3 controller that sits on the main logic board -- NOT a daughterboard -- and it needs to provide 4x PCIE lanes.  This will give you the potential to use the GPU without being totally IO limited.  I say \"potential\" because it really depends on what kind of model you are training and what kind of data you are feeding into it.  \n\nYou will still need to take a lot more care in queuing up your next batch of data on the GPU memory *before* it is required to avoid high latency costs between the CPU and GPU.  \n\nThat being said, no, your 2014 Macbook Air does not have a Thunderbolt 3 connection with 4 PCIE lanes.  Honestly, you could be better off just setting up a good desktop and then remoting into it using something like Guacamole of just SSH.\n\n",
+      "id": "edx53p9"
+    },
+    {
+      "author_fullname": "t2_l99ip",
+      "created_utc": 1547336936.0,
+      "score": 2,
+      "body_html": "<div class=\"md\"><p>Best option is to buy the rtx 2060 to replace your 1060.\nCloud option is way too expensive right now. Not worth it unless you need it for very short bursts of time. </p>\n</div>",
+      "body": "Best option is to buy the rtx 2060 to replace your 1060.\nCloud option is way too expensive right now. Not worth it unless you need it for very short bursts of time. ",
+      "id": "edxmbnw"
+    },
+    {
+      "author_fullname": "t2_2kigs2d4",
+      "created_utc": 1547322679.0,
+      "score": 1,
+      "body_html": "<div class=\"md\"><p>I&#39;m using cloud too: one more reason: if you want to iterate quickly (and your input pipeline is fast enough not to be the bottleneck), then you want a really fast gpu, or you&#39;ll pay with your time. But such a gpu is probably to expensive to buy privately</p>\n\n<p>Plus: you get free credit on singup in the cloud (google offered 300$ a year ago)</p>\n</div>",
+      "body": "I'm using cloud too: one more reason: if you want to iterate quickly (and your input pipeline is fast enough not to be the bottleneck), then you want a really fast gpu, or you'll pay with your time. But such a gpu is probably to expensive to buy privately\n\nPlus: you get free credit on singup in the cloud (google offered 300$ a year ago)",
+      "id": "edx069j"
+    },
+    {
+      "author_fullname": "t2_2pjipf7e",
+      "created_utc": 1547344412.0,
+      "score": 1,
+      "body_html": "<div class=\"md\"><p>Use the cloud. Floydhub and JetML are places to start. If your going to be doing this for a while awesome/gcs are where you will end up. I think having experience with aws will help you get a job too.</p>\n</div>",
+      "body": "Use the cloud. Floydhub and JetML are places to start. If your going to be doing this for a while awesome/gcs are where you will end up. I think having experience with aws will help you get a job too.",
+      "id": "edxy4ra"
+    },
+    {
+      "author_fullname": "t2_2vwr8w89",
+      "created_utc": 1547389878.0,
+      "score": 1,
+      "body_html": "<div class=\"md\"><p>There is considerable (~20%) degradation in compute speed with an eGPU. I use an old laptop to SSH my desktop with a 1080. You can find pretty good deals on gaming PCs with Nvidia GPUs as well. As you progress through your education, I assume your needs will become more demanding but you&#39;ll also develop a clear picture of what you need. Skip the eGPU and buy a desktop. </p>\n</div>",
+      "body": "There is considerable (~20%) degradation in compute speed with an eGPU. I use an old laptop to SSH my desktop with a 1080. You can find pretty good deals on gaming PCs with Nvidia GPUs as well. As you progress through your education, I assume your needs will become more demanding but you'll also develop a clear picture of what you need. Skip the eGPU and buy a desktop. ",
+      "id": "edz4ii3"
+    },
+    {
+      "author_fullname": "t2_2owq70r2",
+      "created_utc": 1547325081.0,
+      "score": 1,
+      "body_html": "<div class=\"md\"><p>no</p>\n</div>",
+      "body": "no",
+      "id": "edx3n1q"
+    }
+  ],
+  "created_utc": 1547321623.0,
+  "author_fullname": "t2_m4390",
+  "selftext": "I'm an undergrad looking to run some deep learning experiments. In a previous class I had access to a supercomputing center, but I lost that when the class ended. I've heard of eGPUs and was wondering if it would be worth it for me. \n\nThere's a post in this sub from two years ago that said they weren't, but maybe things have changed. I have a Windows desktop with a GTX 1060 6GB, and I have a 2014 Macbook Air with a thunderbolt connection. My friend is selling a GTX 1070 8GB for really cheap. It'd be nice if I could use it as an eGPU to run experiments from my desktop or laptop. My main concerns are 1) is thunderbolt fast enough? and 2) would it be cheaper to run it in the cloud somewhere?\n\nI like the peace of mind of owning the setup, and my budget is a few hundred dollars. Thanks!",
+  "selftext_html": "<!-- SC_OFF --><div class=\"md\"><p>I&#39;m an undergrad looking to run some deep learning experiments. In a previous class I had access to a supercomputing center, but I lost that when the class ended. I&#39;ve heard of eGPUs and was wondering if it would be worth it for me. </p>\n\n<p>There&#39;s a post in this sub from two years ago that said they weren&#39;t, but maybe things have changed. I have a Windows desktop with a GTX 1060 6GB, and I have a 2014 Macbook Air with a thunderbolt connection. My friend is selling a GTX 1070 8GB for really cheap. It&#39;d be nice if I could use it as an eGPU to run experiments from my desktop or laptop. My main concerns are 1) is thunderbolt fast enough? and 2) would it be cheaper to run it in the cloud somewhere?</p>\n\n<p>I like the peace of mind of owning the setup, and my budget is a few hundred dollars. Thanks!</p>\n</div><!-- SC_ON -->",
+  "id": "afaqwl"
+}

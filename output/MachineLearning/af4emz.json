@@ -1,0 +1,50 @@
+{
+  "title": "[D] AMD Vega VII for ML?",
+  "comments": [
+    {
+      "author_fullname": "t2_h51hn",
+      "created_utc": 1547272018.0,
+      "score": 4,
+      "body_html": "<div class=\"md\"><p>ROCm support has been merged into TensorFlow, but you need to compile it yourself as far as I’m aware. There might be a container somewhere. Also, the only supported OS is Linux, which might be a problem for some people. (My University has die hard Windows users for some reason...)</p>\n\n<p>As for performance, keep an eye on Phoronix. They should be releasing benchmarks pretty soon. </p>\n</div>",
+      "body": "ROCm support has been merged into TensorFlow, but you need to compile it yourself as far as I’m aware. There might be a container somewhere. Also, the only supported OS is Linux, which might be a problem for some people. (My University has die hard Windows users for some reason...)\n\nAs for performance, keep an eye on Phoronix. They should be releasing benchmarks pretty soon. ",
+      "id": "edvdtwt"
+    },
+    {
+      "author_fullname": "t2_etldnlg",
+      "created_utc": 1547279238.0,
+      "score": 3,
+      "body_html": "<div class=\"md\"><p>From what the people on <a href=\"/r/amd\">/r/amd</a> can gather the Radeon 7 card is a modified Instinct MI50, so yes the card is intended for machine learning and other compute style tasks. </p>\n\n<p>ROCm is messy to compile from source, the prebuilt repository for Ubuntu is the way to go. </p>\n\n<p>Don&#39;t know about TensorFlow, but <a href=\"https://github.com/ROCmSoftwarePlatform/hipCaffe\">hipCaffe</a> does support it. </p>\n</div>",
+      "body": "From what the people on /r/amd can gather the Radeon 7 card is a modified Instinct MI50, so yes the card is intended for machine learning and other compute style tasks. \n\nROCm is messy to compile from source, the prebuilt repository for Ubuntu is the way to go. \n\nDon't know about TensorFlow, but [hipCaffe](https://github.com/ROCmSoftwarePlatform/hipCaffe) does support it. ",
+      "id": "edvjxqv"
+    },
+    {
+      "author_fullname": "t2_mmseoym",
+      "created_utc": 1547276294.0,
+      "score": 8,
+      "body_html": "<div class=\"md\"><p>Don&#39;t buy yourself these problems. AMD can be great gaming GPU, but it is a second-class citizen in ML.</p>\n</div>",
+      "body": "Don't buy yourself these problems. AMD can be great gaming GPU, but it is a second-class citizen in ML.",
+      "id": "edvhkvx"
+    },
+    {
+      "author_fullname": "t2_geusv",
+      "created_utc": 1547306466.0,
+      "score": 1,
+      "body_html": "<div class=\"md\"><p><a href=\"https://twitter.com/RyanSmithAT/status/1083959608371175424?s=20\">FP64 seems to be uncrippled too</a>, which is a big plus.</p>\n</div>",
+      "body": "[FP64 seems to be uncrippled too](https://twitter.com/RyanSmithAT/status/1083959608371175424?s=20), which is a big plus.\n",
+      "id": "edwacuu"
+    },
+    {
+      "author_fullname": "t2_14mwm89",
+      "created_utc": 1547280683.0,
+      "score": 1,
+      "body_html": "<div class=\"md\"><p>Thanks! It seems to me that trying to do training will be a big hassle on AMD, especially because TensorFlow and PyTorch seem to have flaky support. As for hipCaffe, well, I have never used Caffe so I will have to learn it. I&#39;ll just stick to team green for now I guess.</p>\n</div>",
+      "body": "Thanks! It seems to me that trying to do training will be a big hassle on AMD, especially because TensorFlow and PyTorch seem to have flaky support. As for hipCaffe, well, I have never used Caffe so I will have to learn it. I'll just stick to team green for now I guess.",
+      "id": "edvleka"
+    }
+  ],
+  "created_utc": 1547271152.0,
+  "author_fullname": "t2_14mwm89",
+  "selftext": "AMD's latest Vega VII GPU seems to be porfect for training large models (many compute cores and 16 GB of HBM memory!). In particular, its 16 GB of memory and super fast memory speed seem to be perfect for training on large data sets and it unmatched by NVidia at the $799 price point. But is it possible to use this GPU to accelerate TensorFlow training and/or inference? I am aware that there is some AMD support for TensorFlow but how good is it, especially for the upcoming version 2.0? Are there other frameworks with better support for AMD?",
+  "selftext_html": "<!-- SC_OFF --><div class=\"md\"><p>AMD&#39;s latest Vega VII GPU seems to be porfect for training large models (many compute cores and 16 GB of HBM memory!). In particular, its 16 GB of memory and super fast memory speed seem to be perfect for training on large data sets and it unmatched by NVidia at the $799 price point. But is it possible to use this GPU to accelerate TensorFlow training and/or inference? I am aware that there is some AMD support for TensorFlow but how good is it, especially for the upcoming version 2.0? Are there other frameworks with better support for AMD?</p>\n</div><!-- SC_ON -->",
+  "id": "af4emz"
+}

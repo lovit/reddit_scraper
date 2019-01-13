@@ -1,0 +1,50 @@
+{
+  "title": "[D] Was there any conclusion on GloVe vs Word2vec ? Also in their application to encoding other types of items?",
+  "comments": [
+    {
+      "author_fullname": "t2_d7zv7",
+      "created_utc": 1547259945.0,
+      "score": 27,
+      "body_html": "<div class=\"md\"><p>They&#39;re equal when you tune hyperparams. Levy/Goldberg touch on this, and Arora demonstrates that they&#39;re extensions of the same underlying approach.</p>\n\n<p>&#x200B;</p>\n\n<p><a href=\"https://arxiv.org/abs/1502.03520\">https://arxiv.org/abs/1502.03520</a></p>\n</div>",
+      "body": "They're equal when you tune hyperparams. Levy/Goldberg touch on this, and Arora demonstrates that they're extensions of the same underlying approach.\n\n&#x200B;\n\n[https://arxiv.org/abs/1502.03520](https://arxiv.org/abs/1502.03520)",
+      "id": "edv0kb2"
+    },
+    {
+      "author_fullname": "t2_dtuno",
+      "created_utc": 1547271704.0,
+      "score": 9,
+      "body_html": "<div class=\"md\"><p>If you&#39;re asking about the pretrained ones, we&#39;ve found that fast text v2 &gt; glove &gt; word2vec, even after ensuring that we have optimized preprocessing for each. But also I&#39;ve had success from ensembling them.</p>\n</div>",
+      "body": "If you're asking about the pretrained ones, we've found that fast text v2 > glove > word2vec, even after ensuring that we have optimized preprocessing for each. But also I've had success from ensembling them.",
+      "id": "edvdinc"
+    },
+    {
+      "author_fullname": "t2_d0jtx",
+      "created_utc": 1547256958.0,
+      "score": 3,
+      "body_html": "<div class=\"md\"><p>Other applications: DeViSE paper: <a href=\"https://research.google.com/pubs/archive/41473.pdf\">https://research.google.com/pubs/archive/41473.pdf</a></p>\n</div>",
+      "body": "Other applications: DeViSE paper: https://research.google.com/pubs/archive/41473.pdf",
+      "id": "eduwr28"
+    },
+    {
+      "author_fullname": "t2_1t7q8nko",
+      "created_utc": 1547268564.0,
+      "score": 1,
+      "body_html": "<div class=\"md\"><p>A stanford ML course I watched recommended glove as the superior model I believe and it was published a year ago. It&#39;s on youtube.</p>\n</div>",
+      "body": "A stanford ML course I watched recommended glove as the superior model I believe and it was published a year ago. It's on youtube.",
+      "id": "edva9a4"
+    },
+    {
+      "author_fullname": "t2_23g9wpf",
+      "created_utc": 1547346578.0,
+      "score": 1,
+      "body_html": "<div class=\"md\"><p>We have tested both versions and some others in real recommendation systems. But for us the best embedding model was starspace from facebook research which we modified using triplet loss and using some tricks with sampling.</p>\n</div>",
+      "body": "We have tested both versions and some others in real recommendation systems. But for us the best embedding model was starspace from facebook research which we modified using triplet loss and using some tricks with sampling.",
+      "id": "edy11rt"
+    }
+  ],
+  "created_utc": 1547252858.0,
+  "author_fullname": "t2_10efjmjx",
+  "selftext": "I'm asking because word2vec is being used in recommendation systems, but I think as soon as 2 years ago, there wasn't yet a solid conclusion on which one is better. They seemed to be pretty similar, which is not surprising, I'd imagine center word/context word pairings, and word-word co-occurences within a context to give similar results. ",
+  "selftext_html": "<!-- SC_OFF --><div class=\"md\"><p>I&#39;m asking because word2vec is being used in recommendation systems, but I think as soon as 2 years ago, there wasn&#39;t yet a solid conclusion on which one is better. They seemed to be pretty similar, which is not surprising, I&#39;d imagine center word/context word pairings, and word-word co-occurences within a context to give similar results. </p>\n</div><!-- SC_ON -->",
+  "id": "af1yxq"
+}

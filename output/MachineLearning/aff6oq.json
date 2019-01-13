@@ -1,0 +1,18 @@
+{
+  "title": "[D] Enforcing A Latent Space Prior for 1 vs all Classifiers",
+  "comments": [
+    {
+      "author_fullname": "t2_167fgi",
+      "created_utc": 1547405284.0,
+      "score": 2,
+      "body_html": "<div class=\"md\"><p>I have a needle-in-haystack problem where I&#39;m training to distinguish things that seem &#39;meaningful&#39; with open-ended possibilities, from &#39;unmeaningful&#39;, I suspect with a higher order of infinity; in my data, &#39;meaningful&#39; is about 15%. Working with as little knowledge as possible, I wound up with 50:50 pos:neg for training, and 30:70 for testing. </p>\n\n<pre><code>And yet God has not said a word! \n--Browning\n</code></pre>\n</div>",
+      "body": "I have a needle-in-haystack problem where I'm training to distinguish things that seem 'meaningful' with open-ended possibilities, from 'unmeaningful', I suspect with a higher order of infinity; in my data, 'meaningful' is about 15%. Working with as little knowledge as possible, I wound up with 50:50 pos:neg for training, and 30:70 for testing. \n\n    And yet God has not said a word! \n    --Browning",
+      "id": "edzquai"
+    }
+  ],
+  "created_utc": 1547349468.0,
+  "author_fullname": "t2_12j6la",
+  "selftext": "I see so many people designing 1 vs all classifiers as binary classifiers using CNNs. Wouldnt this result in a latent space composed of 2 halfspaces, 1 for class A and 1 for everything else? This seems like a non-optimal solution as the size of the space compose of the class you are looking for is likely much smaller that the size of everything you aren't. This is like how the size of the integers is infinite, but much smaller than the size of rational numbers.\n\n​\n\nI would think you don't want the latent space to be 2 half spaces but more like a sphere located at the origin where the inside the sphere is the class you want, and everything else is outside of that. In this way ,you have enough \"room\" for everything you don't want to comfortable exist.\n\n​\n\nIf what I say is true, then wouldnt you want to force the latent space to have the spherical shape i describe to get best performance?\n",
+  "selftext_html": "<!-- SC_OFF --><div class=\"md\"><p>I see so many people designing 1 vs all classifiers as binary classifiers using CNNs. Wouldnt this result in a latent space composed of 2 halfspaces, 1 for class A and 1 for everything else? This seems like a non-optimal solution as the size of the space compose of the class you are looking for is likely much smaller that the size of everything you aren&#39;t. This is like how the size of the integers is infinite, but much smaller than the size of rational numbers.</p>\n\n<p>​</p>\n\n<p>I would think you don&#39;t want the latent space to be 2 half spaces but more like a sphere located at the origin where the inside the sphere is the class you want, and everything else is outside of that. In this way ,you have enough &quot;room&quot; for everything you don&#39;t want to comfortable exist.</p>\n\n<p>​</p>\n\n<p>If what I say is true, then wouldnt you want to force the latent space to have the spherical shape i describe to get best performance?</p>\n</div><!-- SC_ON -->",
+  "id": "aff6oq"
+}

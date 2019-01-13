@@ -1,0 +1,42 @@
+{
+  "title": "[D] AI Safety and RL",
+  "comments": [
+    {
+      "author_fullname": "t2_qrrr5",
+      "created_utc": 1547286657.0,
+      "score": 4,
+      "body_html": "<div class=\"md\"><p>Almost any problem can be re-framed as an RL problem. Because of this, RL is a useful framework to think about AGI safety.</p>\n\n<p>If you have an AGI, you can put it into the &quot;seat&quot; of an RL agent, and expect it to do no worse than a human who has no clue how inputs, actions and dynamics of the environment might be structured.</p>\n\n<p>If you look at some of the RL benchmarks in research, you&#39;ll notice that agent architecture mirrors the structure of the problem, e.g. convolutions for vision inputs, engineered length of history the agent sees, etc. That&#39;s not because we cannot implement more generic agents, but because it is theoretically impossible for a generic RL agent to make progress using a low number of trials without using pre-existing knowledge, e.g. about the proximity of pixels.</p>\n\n<p>So back to your question if RL is &quot;the best method&quot; we have: it&#39;s not a method but a framework (and a good one). But it leaves a lot of questions to be solved during the design of the agent, environment and reward structure.</p>\n</div>",
+      "body": "Almost any problem can be re-framed as an RL problem. Because of this, RL is a useful framework to think about AGI safety.\n\nIf you have an AGI, you can put it into the \"seat\" of an RL agent, and expect it to do no worse than a human who has no clue how inputs, actions and dynamics of the environment might be structured.\n\nIf you look at some of the RL benchmarks in research, you'll notice that agent architecture mirrors the structure of the problem, e.g. convolutions for vision inputs, engineered length of history the agent sees, etc. That's not because we cannot implement more generic agents, but because it is theoretically impossible for a generic RL agent to make progress using a low number of trials without using pre-existing knowledge, e.g. about the proximity of pixels.\n\nSo back to your question if RL is \"the best method\" we have: it's not a method but a framework (and a good one). But it leaves a lot of questions to be solved during the design of the agent, environment and reward structure.",
+      "id": "edvroag"
+    },
+    {
+      "author_fullname": "t2_11bey2",
+      "created_utc": 1547278230.0,
+      "score": 1,
+      "body_html": "<div class=\"md\"><p>That&#39;s a pretty good way to look at it, yes.</p>\n</div>",
+      "body": "That's a pretty good way to look at it, yes.",
+      "id": "edvj2g0"
+    },
+    {
+      "author_fullname": "t2_4h4il4",
+      "created_utc": 1547281115.0,
+      "score": 1,
+      "body_html": "<div class=\"md\"><p>I wouldn&#39;t say that because supervised learning can also learn from complex uncertain environments.  The most important part of AGI is the G part.  The goal is for a model/agent to be able to solve a problem that it wasn&#39;t explicitly trained to solve.  The only way to do this is with RL.  Also, generally speaking, RL is somewhat similar to how humans learn.  Also RL can incorporate other methods like deep learning.</p>\n</div>",
+      "body": "I wouldn't say that because supervised learning can also learn from complex uncertain environments.  The most important part of AGI is the G part.  The goal is for a model/agent to be able to solve a problem that it wasn't explicitly trained to solve.  The only way to do this is with RL.  Also, generally speaking, RL is somewhat similar to how humans learn.  Also RL can incorporate other methods like deep learning.",
+      "id": "edvlw2i"
+    },
+    {
+      "author_fullname": "t2_29my9715",
+      "created_utc": 1547285494.0,
+      "score": -1,
+      "body_html": "<div class=\"md\"><p>Fuck AI safety I want to make Ultron Sktnet and HAL. All three baby! And have a virtual cup of tea with them.</p>\n</div>",
+      "body": "Fuck AI safety I want to make Ultron Sktnet and HAL. All three baby! And have a virtual cup of tea with them.",
+      "id": "edvqkpz"
+    }
+  ],
+  "created_utc": 1547275888.0,
+  "author_fullname": "t2_kygpt",
+  "selftext": "I’m relatively new to AI safety and was curious why most discussions regarding it view RL as the only method to develop AGI. Is it because it’s the best method we have to learn from complex uncertain environments?\n\nSorry if this is a silly question or in the wrong subreddit",
+  "selftext_html": "<!-- SC_OFF --><div class=\"md\"><p>I’m relatively new to AI safety and was curious why most discussions regarding it view RL as the only method to develop AGI. Is it because it’s the best method we have to learn from complex uncertain environments?</p>\n\n<p>Sorry if this is a silly question or in the wrong subreddit</p>\n</div><!-- SC_ON -->",
+  "id": "af4yc0"
+}

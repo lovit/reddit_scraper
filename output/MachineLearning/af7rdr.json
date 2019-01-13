@@ -1,0 +1,58 @@
+{
+  "title": "[P] Implementing P-adam, novel optimization algorithm for Neural Networks",
+  "comments": [
+    {
+      "author_fullname": "t2_1ts4bbds",
+      "created_utc": 1547314339.0,
+      "score": 10,
+      "body_html": "<div class=\"md\"><p>I did quite a bit of testing with PAdam in Keras to see if PAdam &gt; Adam. My understanding is that the accuracy gap goes away entirely with correct implementation of weight decay according to the <a href=\"https://arxiv.org/abs/1711.05101\">AdamW paper</a> and tuned hyper-parameters.  I was unable to ever get better final validation results with PAdam or SGD vs Adam after correctly implementing decoupled weight decay and tuning hyper-parameters. I tested a range values for the partial parameter ([0. - 0.5]) and found no changes in accuracy after tuning. Note that 0. is similar to SGD and 0.5 is Adam. fast.ai <a href=\"https://www.fast.ai/2018/07/02/adam-weight-decay/\">found the same result I did when experimenting on CIFAR10</a> and comparing SGD to Adam (they have available source for their experiments). I did my testing primarily on cifar10 and a kaggle competition dataset. Based on my skimming of the PAdam implementation posted here, weight decay isn&#39;t correctly decoupled based on the <a href=\"https://arxiv.org/abs/1711.05101\">AdamW paper</a>. This will result in an unfair comparison between PAdam and Adam.</p>\n\n<p>&#x200B;</p>\n\n<p>If people are interested, I will do some more experiments and potentially write a paper on the topic.</p>\n</div>",
+      "body": "I did quite a bit of testing with PAdam in Keras to see if PAdam > Adam. My understanding is that the accuracy gap goes away entirely with correct implementation of weight decay according to the [AdamW paper](https://arxiv.org/abs/1711.05101) and tuned hyper-parameters.  I was unable to ever get better final validation results with PAdam or SGD vs Adam after correctly implementing decoupled weight decay and tuning hyper-parameters. I tested a range values for the partial parameter (\\[0. - 0.5\\]) and found no changes in accuracy after tuning. Note that 0. is similar to SGD and 0.5 is Adam. fast.ai [found the same result I did when experimenting on CIFAR10](https://www.fast.ai/2018/07/02/adam-weight-decay/) and comparing SGD to Adam (they have available source for their experiments). I did my testing primarily on cifar10 and a kaggle competition dataset. Based on my skimming of the PAdam implementation posted here, weight decay isn't correctly decoupled based on the [AdamW paper](https://arxiv.org/abs/1711.05101). This will result in an unfair comparison between PAdam and Adam.\n\n&#x200B;\n\nIf people are interested, I will do some more experiments and potentially write a paper on the topic.",
+      "id": "edwlqsh"
+    },
+    {
+      "author_fullname": "t2_f5d77h9",
+      "created_utc": 1547317794.0,
+      "score": 3,
+      "body_html": "<div class=\"md\"><p>The report demonstrating the results of our experiments is available at : <a href=\"https://github.com/yashkant/Padam-Tensorflow/blob/master/Report.pdf\">https://github.com/yashkant/Padam-Tensorflow/blob/master/Report.pdf</a></p>\n</div>",
+      "body": "The report demonstrating the results of our experiments is available at : [https://github.com/yashkant/Padam-Tensorflow/blob/master/Report.pdf](https://github.com/yashkant/Padam-Tensorflow/blob/master/Report.pdf)",
+      "id": "edws9zk"
+    },
+    {
+      "author_fullname": "t2_167fgi",
+      "created_utc": 1547304679.0,
+      "score": 4,
+      "body_html": "<div class=\"md\"><p>Can&#39;t wait to see how well the adaptive version works! Why is there a flattening at 100 epochs?</p>\n</div>",
+      "body": "Can't wait to see how well the adaptive version works! Why is there a flattening at 100 epochs?",
+      "id": "edw8crq"
+    },
+    {
+      "author_fullname": "t2_5a8xz",
+      "created_utc": 1547310147.0,
+      "score": 2,
+      "body_html": "<div class=\"md\"><p>Thanks for this! Is there an easy way to use it in Keras? Have you experiment with learning rate schedules and/or cyclic learning rates?</p>\n</div>",
+      "body": "Thanks for this! Is there an easy way to use it in Keras? Have you experiment with learning rate schedules and/or cyclic learning rates?",
+      "id": "edwf7ko"
+    },
+    {
+      "author_fullname": "t2_2f0svr5k",
+      "created_utc": 1547361907.0,
+      "score": 2,
+      "body_html": "<div class=\"md\"><p>Since the margin is so small, I am wondering how often you repeated the experiments and what the standard deviation/SOM/conf interval for each method is.</p>\n</div>",
+      "body": "Since the margin is so small, I am wondering how often you repeated the experiments and what the standard deviation/SOM/conf interval for each method is.",
+      "id": "edyh0ig"
+    },
+    {
+      "author_fullname": "t2_ksx81hl",
+      "created_utc": 1547384562.0,
+      "score": 1,
+      "body_html": "<div class=\"md\"><p>Interesting, I gave this a quick test a few months ago with the author&#39;s pytorch implementation &amp; found no improvement.  Are there ImageNet results anywhere?</p>\n</div>",
+      "body": "Interesting, I gave this a quick test a few months ago with the author's pytorch implementation & found no improvement.  Are there ImageNet results anywhere?",
+      "id": "edyzl38"
+    }
+  ],
+  "created_utc": 1547302737.0,
+  "author_fullname": "t2_uhoir2u",
+  "selftext": "This work is a part of ICLR Reproducibility Challenge 2019, we try to reproduce the  results  in  the  conference  submission PADAM: Closing The Generalization Gap of Adaptive Gradient Methods In Training Deep Neural Networks. Adaptive  gradient  methods  proposed  in  past  demonstrate  a  degraded  generalization performance than the stochastic gradient descent (SGD) with momentum.   The authors try to address this problem by designing a new optimization algorithm that bridges the gap between the space of Adaptive Gradient algorithms and SGD with momentum. With this method a new tunable hyperparameter called partially adaptive parameter p is introduced that varies between \\[0, 0.5\\]. We build the proposed optimizer and use it to mirror the experiments performed by the authors. We review and comment on the empirical analysis performed by the authors.  Finally, we also propose a future direction for further study of Padam.  Our code is available at: [https://github.com/yashkant/Padam-Tensorflow](https://github.com/yashkant/Padam-Tensorflow)",
+  "selftext_html": "<!-- SC_OFF --><div class=\"md\"><p>This work is a part of ICLR Reproducibility Challenge 2019, we try to reproduce the  results  in  the  conference  submission PADAM: Closing The Generalization Gap of Adaptive Gradient Methods In Training Deep Neural Networks. Adaptive  gradient  methods  proposed  in  past  demonstrate  a  degraded  generalization performance than the stochastic gradient descent (SGD) with momentum.   The authors try to address this problem by designing a new optimization algorithm that bridges the gap between the space of Adaptive Gradient algorithms and SGD with momentum. With this method a new tunable hyperparameter called partially adaptive parameter p is introduced that varies between [0, 0.5]. We build the proposed optimizer and use it to mirror the experiments performed by the authors. We review and comment on the empirical analysis performed by the authors.  Finally, we also propose a future direction for further study of Padam.  Our code is available at: <a href=\"https://github.com/yashkant/Padam-Tensorflow\">https://github.com/yashkant/Padam-Tensorflow</a></p>\n</div><!-- SC_ON -->",
+  "id": "af7rdr"
+}

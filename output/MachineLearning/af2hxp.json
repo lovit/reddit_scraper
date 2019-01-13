@@ -1,0 +1,34 @@
+{
+  "title": "[D] GAN for hair style transfer?",
+  "comments": [
+    {
+      "author_fullname": "t2_2w62pmm3",
+      "created_utc": 1547263796.0,
+      "score": 2,
+      "body_html": "<div class=\"md\"><p>You may want to use an embedded CycleGAN to handle the shape changes. It&#39;s described in a recent thesis (which also explores why cycleGANs typically struggle with shape changes in the first place):\n<a href=\"https://scholarworks.rit.edu/theses/9939/\">https://scholarworks.rit.edu/theses/9939/</a></p>\n\n<p>I believe you&#39;ll need a CycleGAN, specifically, because I can&#39;t see how you&#39;d train this without using an <em>unpaired</em> dataset.</p>\n\n<p>Not sure how successful you&#39;ll be, but it&#39;s worth a shot! Be sure to post your results, if you have the time to follow this through 😊</p>\n</div>",
+      "body": "You may want to use an embedded CycleGAN to handle the shape changes. It's described in a recent thesis (which also explores why cycleGANs typically struggle with shape changes in the first place):\nhttps://scholarworks.rit.edu/theses/9939/\n\nI believe you'll need a CycleGAN, specifically, because I can't see how you'd train this without using an _unpaired_ dataset.\n\nNot sure how successful you'll be, but it's worth a shot! Be sure to post your results, if you have the time to follow this through 😊",
+      "id": "edv50vr"
+    },
+    {
+      "author_fullname": "t2_44nts",
+      "created_utc": 1547314363.0,
+      "score": 1,
+      "body_html": "<div class=\"md\"><p>Have a look at this: <a href=\"https://github.com/oripress/ContentDisentanglement\">https://github.com/oripress/ContentDisentanglement</a>. It does what you want, but for glasses/mouth/facial hair.</p>\n</div>",
+      "body": "Have a look at this: [https://github.com/oripress/ContentDisentanglement](https://github.com/oripress/ContentDisentanglement). It does what you want, but for glasses/mouth/facial hair.",
+      "id": "edwlsdg"
+    },
+    {
+      "author_fullname": "t2_2d3wdjv6",
+      "created_utc": 1547260198.0,
+      "score": 0,
+      "body_html": "<div class=\"md\"><p>I dxc a</p>\n</div>",
+      "body": "I dxc a",
+      "id": "edv0vol"
+    }
+  ],
+  "created_utc": 1547256530.0,
+  "author_fullname": "t2_awx5c",
+  "selftext": "I want to train a model that is able to transfer one specific hairstyle of a specific person (I will be collecting the training data myself) to any other person and am wondering about the feasibility of this. While there have been several projects relating to transfer of facial attributes such as StarGAN, when it comes to hair they only change colour which is definitely significantly easier. The one project I found attempting something like this is Learning to Generate and Edit Hairstyles ([https://yanweifu.github.io/papers/hairstyle\\_v\\_14\\_weidong.pdf](https://yanweifu.github.io/papers/hairstyle_v_14_weidong.pdf)) from about 18 months ago with no public implementation.",
+  "selftext_html": "<!-- SC_OFF --><div class=\"md\"><p>I want to train a model that is able to transfer one specific hairstyle of a specific person (I will be collecting the training data myself) to any other person and am wondering about the feasibility of this. While there have been several projects relating to transfer of facial attributes such as StarGAN, when it comes to hair they only change colour which is definitely significantly easier. The one project I found attempting something like this is Learning to Generate and Edit Hairstyles (<a href=\"https://yanweifu.github.io/papers/hairstyle_v_14_weidong.pdf\">https://yanweifu.github.io/papers/hairstyle_v_14_weidong.pdf</a>) from about 18 months ago with no public implementation.</p>\n</div><!-- SC_ON -->",
+  "id": "af2hxp"
+}

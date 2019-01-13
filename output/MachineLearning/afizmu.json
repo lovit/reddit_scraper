@@ -1,0 +1,26 @@
+{
+  "title": "[D] What's DCGAN talking about not putting BatchNorm at the last layer of G and first layer of D?",
+  "comments": [
+    {
+      "author_fullname": "t2_eg0qr",
+      "created_utc": 1547400049.0,
+      "score": 2,
+      "body_html": "<div class=\"md\"><p>Actually batch norm not used in recent gans.</p>\n</div>",
+      "body": "Actually batch norm not used in recent gans.",
+      "id": "edzijiu"
+    },
+    {
+      "author_fullname": "t2_2dp74ixg",
+      "created_utc": 1547400411.0,
+      "score": 2,
+      "body_html": "<div class=\"md\"><p>The issue is that if batch norm is used in those layers the network can&#39;t learn about the correct scale and mean of the data distribution, because it will be normalized to 1. </p>\n</div>",
+      "body": "The issue is that if batch norm is used in those layers the network can't learn about the correct scale and mean of the data distribution, because it will be normalized to 1. ",
+      "id": "edzj3sh"
+    }
+  ],
+  "created_utc": 1547383170.0,
+  "author_fullname": "t2_2z236g4p",
+  "selftext": "Just to be sure this is what they meant right?\n\nG(z) = Tanh(Conv(a^(l-1) ) correct\n\nG(z) = Tanh(BN(Conv(a^(l-1) )) wrong\n\nD(x) = D_otherlayers(LeakyRelu(Conv(x))) correct\n\nD(x) = D_otherlayers(LeakyReu(BN(Conv(x)))) wrong\n\nFirst of all why do they even advise the output layer not to use BN I thought BN was supposed to normalized the inputs to a layer so its weights can converge faster but the output layer is not an input to any layer so there's no weights that needs helping to converge even?\n\nAs far as I remember they seemed to only say doing those things above will cause sample oscillations and did not explain further, it seems to be common knowledge. Can anyone tell they meant by samples oscillating and why BN at those layers would cause it.",
+  "selftext_html": "<!-- SC_OFF --><div class=\"md\"><p>Just to be sure this is what they meant right?</p>\n\n<p>G(z) = Tanh(Conv(a<sup>l-1</sup> ) correct</p>\n\n<p>G(z) = Tanh(BN(Conv(a<sup>l-1</sup> )) wrong</p>\n\n<p>D(x) = D_otherlayers(LeakyRelu(Conv(x))) correct</p>\n\n<p>D(x) = D_otherlayers(LeakyReu(BN(Conv(x)))) wrong</p>\n\n<p>First of all why do they even advise the output layer not to use BN I thought BN was supposed to normalized the inputs to a layer so its weights can converge faster but the output layer is not an input to any layer so there&#39;s no weights that needs helping to converge even?</p>\n\n<p>As far as I remember they seemed to only say doing those things above will cause sample oscillations and did not explain further, it seems to be common knowledge. Can anyone tell they meant by samples oscillating and why BN at those layers would cause it.</p>\n</div><!-- SC_ON -->",
+  "id": "afizmu"
+}

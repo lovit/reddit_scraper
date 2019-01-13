@@ -1,0 +1,18 @@
+{
+  "title": "[P] Looking for a Model That Has Been Pre-Trained on the ADE20K Dataset",
+  "comments": [
+    {
+      "author_fullname": "t2_3anmw",
+      "created_utc": 1547414506.0,
+      "score": 1,
+      "body_html": "<div class=\"md\"><p>What about their official ones?</p>\n\n<p><a href=\"http://sceneparsing.csail.mit.edu/\">http://sceneparsing.csail.mit.edu/</a></p>\n</div>",
+      "body": "What about their official ones?\n\nhttp://sceneparsing.csail.mit.edu/",
+      "id": "ee064x4"
+    }
+  ],
+  "created_utc": 1547403539.0,
+  "author_fullname": "t2_7iw2n",
+  "selftext": "I'm hoping to use a neural net that has been pre-trained on the [ADE20K](http://groups.csail.mit.edu/vision/datasets/ADE20K/) dataset for a project I'm working on. I am planning to train [DilatedNet](https://github.com/nicolov/segmentation_keras) myself, unless there is an existing alternative. I googled around and wasn't able to find anything. \n\n&#x200B;\n\nDoes anyone know of a pre-trained model I could use, or a good place to look for something like this?",
+  "selftext_html": "<!-- SC_OFF --><div class=\"md\"><p>I&#39;m hoping to use a neural net that has been pre-trained on the <a href=\"http://groups.csail.mit.edu/vision/datasets/ADE20K/\">ADE20K</a> dataset for a project I&#39;m working on. I am planning to train <a href=\"https://github.com/nicolov/segmentation_keras\">DilatedNet</a> myself, unless there is an existing alternative. I googled around and wasn&#39;t able to find anything. </p>\n\n<p>&#x200B;</p>\n\n<p>Does anyone know of a pre-trained model I could use, or a good place to look for something like this?</p>\n</div><!-- SC_ON -->",
+  "id": "afm1m0"
+}

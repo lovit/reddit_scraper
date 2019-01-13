@@ -76,6 +76,21 @@ def yield_submission_from(begin_date, r, dist, max_num=100, sleep=1):
     It yields
     -----
     submission as json format
+
+    Usage
+    -----
+
+        from reddit_scraper import yield_submission_from
+
+        # arguments
+        begin_date = '2019-01-12 05-12-00'
+        r = 'MachineLearning'
+        dist = 25
+        max_num = 100
+        slee = 1
+
+        for json_obj in yield_submission_from(begin_date, r, dist, max_num, sleep):
+            # do something
     """
 
     d_begin = strf_to_datetime(begin_date)

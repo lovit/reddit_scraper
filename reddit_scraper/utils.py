@@ -1,5 +1,6 @@
 import re
 import requests
+from datetime import datetime
 from bs4 import BeautifulSoup
 from time import gmtime, strftime
 
@@ -24,3 +25,9 @@ def normalize_text(text):
     text = lineseparator_pattern.sub('\n', text)
     text = doublespace_pattern.sub(' ', text)
     return text.strip()
+
+def unixtime_to_datetime(t):
+    return datetime.fromtimestamp(t)
+
+def strf_to_datetime(yyyy_mm_dd, form='%Y-%m-%d'):
+    return datetime.strptime(yyyy_mm_dd, form)

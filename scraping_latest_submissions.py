@@ -16,7 +16,7 @@ def scraping(reddit, begin_date, r, dist, max_num, sleep, directory, verbose, be
 
     n_exceptions = 0
 
-    for i, json_obj in enumerate(yield_submission_from(reddit, begin_date, r, dist, max_num, sleep)):
+    for i, json_obj in enumerate(yield_submission_from(reddit, begin_date, r, dist, max_num, sleep, begin_id)):
         if json_obj is None:
             print('Unexpected exception. Sleep 5 minutes')
             time.sleep(300)

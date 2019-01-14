@@ -26,7 +26,8 @@ def scraping(reddit, begin_date, r, dist, max_num, sleep, directory, verbose, be
         if verbose:
             title = json_obj['title']
             created_utc = unixtime_to_datetime(json_obj['created_utc'])
-            print('[{} / {}] ({}) {}'.format(i+1, max_num, created_utc, title))
+            idx = json_obj['id']
+            print('[{} / {}] ({}, {}) {}'.format(i+1, max_num, created_utc, idx, title))
 
 def main():
     parser = argparse.ArgumentParser()

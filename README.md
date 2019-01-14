@@ -44,6 +44,11 @@ Stop scrapping. 19 / 100 posts was scrapped
 The oldest submission has been created after 2019-01-12 05-12-00
 ```
 
+Using Python script
+
+```
+python scraping_latest_submissions.py --begin_date 2017-01-01_00-00-00 --r MachineLearning --max_num 100000 --sleep 0.3 --verbose
+```
 
 ## Requirements
 

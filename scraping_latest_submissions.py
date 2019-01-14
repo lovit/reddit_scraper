@@ -46,7 +46,7 @@ def main():
     dist = args.dist
     max_num = args.max_num
     sleep = args.sleep
-    begin_id = begin_id
+    begin_id = args.begin_id
     VERBOSE = args.VERBOSE
 
     # load configuration

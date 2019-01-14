@@ -132,7 +132,11 @@ def yield_submission_from(reddit, begin_date, r, dist, max_num=100, sleep=1, beg
             break
 
         # get submission ids
-        submission_ids = get_after_submission_ids(r, after_id, dist)
+        try:
+            submission_ids = get_after_submission_ids(r, after_id, dist)
+        except Exception as e:
+            print(e)
+            raise ValueError('Failed to get submission ids. Last id = {}'.format(after_id))
 
         for idx in submission_ids:
             if n_posts >= max_num:

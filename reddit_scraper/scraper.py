@@ -65,7 +65,7 @@ def get_after_submission_ids(r, after_id, dist):
     submission_ids = [parse_idx(idx) for idx in json.loads(r.text)['postIds']]
     return submission_ids
 
-def yield_submission_from(reddit, begin_date, r, dist, max_num=100, sleep=1):
+def yield_submission_from(reddit, begin_date, r, dist, max_num=100, sleep=1, begin_id=None):
     """
     Arguments
     ---------
@@ -81,6 +81,9 @@ def yield_submission_from(reddit, begin_date, r, dist, max_num=100, sleep=1):
         Maximum number of submissions (posts) to be scraped
     sleep : float
         Sleep time for each submission
+    begin_id : str
+        Submission id, the latest post
+        Default is None. If None, this function find begin_id, first.
 
     It yields
     -----
@@ -105,8 +108,11 @@ def yield_submission_from(reddit, begin_date, r, dist, max_num=100, sleep=1):
     d_begin = strf_to_datetime(begin_date)
     # get latest submission idx
     soup = get_soup('https://www.reddit.com/r/{}/new/'.format(r))
-    after_id = soup.select('div[class^=scrollerItem]')[0].attrs['id']
-    after_id = parse_idx(after_id)
+    if begin_id is None:
+        after_id = soup.select('div[class^=scrollerItem]')[0].attrs['id']
+        after_id = parse_idx(after_id)
+    else:
+        after_id = begin_id
 
     # set iteration parameters
     n_tries = math.ceil(max_num/25)
@@ -145,4 +151,5 @@ def yield_submission_from(reddit, begin_date, r, dist, max_num=100, sleep=1):
 
             # flush
             n_posts += 1
+            after_id = idx
             time.sleep(sleep)

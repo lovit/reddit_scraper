@@ -11,7 +11,7 @@ def save(json_obj, directory):
     with open(filepath, 'w', encoding='utf-8') as fp:
         json.dump(json_obj, fp, indent=2, ensure_ascii=False)
 
-def scraping(reddit, begin_date, r, dist, max_num, sleep, directory, verbose):
+def scraping(reddit, begin_date, r, dist, max_num, sleep, directory, verbose, begin_id=None):
 
     n_exceptions = 0
 
@@ -36,6 +36,7 @@ def main():
     parser.add_argument('--dist', type=str, default='25', help='Dist value corresponding r')
     parser.add_argument('--max_num', type=int, default=100, help='Maximum number of submissions to be scraped')
     parser.add_argument('--sleep', type=float, default=1.0, help='Sleep time for each submission (post)')
+    parser.add_argument('--begin_id', type=str, default=None, help='Dist value corresponding r')
     parser.add_argument('--verbose', dest='VERBOSE', action='store_true')
 
     args = parser.parse_args()
@@ -45,6 +46,7 @@ def main():
     dist = args.dist
     max_num = args.max_num
     sleep = args.sleep
+    begin_id = begin_id
     VERBOSE = args.VERBOSE
 
     # load configuration
@@ -71,7 +73,7 @@ def main():
     if not os.path.exists(directory):
         os.makedirs(directory)
 
-    scraping(reddit, begin_date, r, dist, max_num, sleep, directory, VERBOSE)
+    scraping(reddit, begin_date, r, dist, max_num, sleep, directory, VERBOSE, begin_id)
 
 if __name__ == '__main__':
     main()

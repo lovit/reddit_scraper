@@ -9,14 +9,17 @@ from .utils import unixtime_to_datetime
 
 
 def _parse_comment(comment):
-    return {
-        'author_fullname': comment.author_fullname,
-        'created_utc': comment.created_utc,
-        'score': comment.score,
-        'body_html': comment.body_html,
-        'body': comment.body,
-        'id': comment.id
-    }
+    try:
+        return {
+            'author_fullname': comment.author_fullname,
+            'created_utc': comment.created_utc,
+            'score': comment.score,
+            'body_html': comment.body_html,
+            'body': comment.body,
+            'id': comment.id
+        }
+    except:
+        return {}
 
 def parse_submission(submission):
     """
@@ -35,16 +38,19 @@ def parse_submission(submission):
         submission = reddit.submission(id='a8yaro')
         submission_json = parse_submission(submission)
     """
-    return {
-        'title': submission.title,
-        'comments': [_parse_comment(comment)
-                     for comment in submission.comments],
-        'created_utc': submission.created_utc,
-        'author_fullname': submission.author_fullname,
-        'selftext': submission.selftext,
-        'selftext_html': submission.selftext_html,
-        'id': submission.id
-    }
+    try:
+        return {
+            'title': submission.title,
+            'comments': [_parse_comment(comment)
+                         for comment in submission.comments],
+            'created_utc': submission.created_utc,
+            'author_fullname': submission.author_fullname,
+            'selftext': submission.selftext,
+            'selftext_html': submission.selftext_html,
+            'id': submission.id
+        }
+    except:
+        return None
 
 def parse_idx(strf):
     return strf[3:]

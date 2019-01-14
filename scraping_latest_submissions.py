@@ -1,6 +1,7 @@
 import argparse
 import json
 import os
+import time
 import praw
 from reddit_scraper.utils import unixtime_to_datetime
 from reddit_scraper.scraper import yield_submission_from
@@ -16,6 +17,9 @@ def scraping(reddit, begin_date, r, dist, max_num, sleep, directory, verbose, be
     n_exceptions = 0
 
     for i, json_obj in enumerate(yield_submission_from(reddit, begin_date, r, dist, max_num, sleep)):
+        if json_obj is None:
+            print('Unexpected exception. Sleep 5 minutes')
+            time.sleep(300)
         try:
             save(json_obj, directory)
         except Exception as e:

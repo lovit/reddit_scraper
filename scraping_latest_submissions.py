@@ -14,6 +14,7 @@ def save(json_obj, directory):
 
 def scraping(reddit, begin_date, r, dist, max_num, sleep, directory, verbose, begin_id=None):
 
+    print('begin_id is {}'.format(begin_id))
     n_exceptions = 0
 
     for i, json_obj in enumerate(yield_submission_from(reddit, begin_date, r, dist, max_num, sleep, begin_id)):

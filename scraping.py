@@ -31,7 +31,7 @@ def scraping(reddit, begin_date, r, dist, max_num, sleep, directory, verbose):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--begin_date', type=str, default='2019-01-01_00-00-00', help='datetime YYYY-mm-dd_HH-MM-SS')
-    parser.add_argument('--directory', type=str, default='./output/', help='Output directory')    
+    parser.add_argument('--directory', type=str, default='./output/', help='Output directory')
     parser.add_argument('--r', type=str, default='MachineLearning', help='Reddit topic')
     parser.add_argument('--dist', type=str, default='25', help='Dist value corresponding r')
     parser.add_argument('--max_num', type=int, default=100, help='Maximum number of submissions to be scraped')
